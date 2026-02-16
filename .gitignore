@@ -33,8 +33,15 @@ README.html
 *.key
 
 # Credential / secret files (broad patterns)
-*credentials*
-*secret*
+# Credential / secret files (specific patterns)
+**/credentials.json
+**/credentials.yml
+**/credentials.yaml
+**/.credentials
+**/secrets.json
+**/secrets.yml
+**/secrets.yaml
+**/.secrets
 
 # AWS-specific
 aws-credentials.env
