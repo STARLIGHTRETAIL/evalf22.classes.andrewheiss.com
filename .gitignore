@@ -17,3 +17,52 @@ projects/*.zip
 **/*_cache/*
 
 README.html
+
+# Security — secrets & credentials (org-wide)
+# =============================================================================
+# Secrets & Credentials — Apply org-wide
+# =============================================================================
+
+# Environment files
+.env
+.env.*
+!.env.example.template
+
+# Private keys & certificates
+*.pem
+*.key
+
+# Credential / secret files (broad patterns)
+# Credential / secret files (specific patterns)
+**/credentials.json
+**/credentials.yml
+**/credentials.yaml
+**/.credentials
+**/secrets.json
+**/secrets.yml
+**/secrets.yaml
+**/.secrets
+
+# AWS-specific
+aws-credentials.env
+awsenv.local
+
+# Deployment configs containing secrets
+.env.deploy
+samconfig.toml
+
+# IDE workspace files (may contain tokens/keys)
+.idea/
+.idea/workspace.xml
+
+# Terraform state (contains sensitive outputs)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Docker env overrides
+docker-compose.override.yml
+
+# OS artifacts
+.DS_Store
+Thumbs.db
